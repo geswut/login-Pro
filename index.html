@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Log In</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- main -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container-fluid ">
+      <div class="row" id="logs">
+        <div class="col-6 text-center">
+          <input class="myinp" id="myin1" type="text" name="" placeholder="Username">
+          <input class="myinp" id="myin2" type="text" name="" placeholder="Password">
+          <button class="btn btn-warning pt-1" onclick="submit()" type="button">Sign in</button> <br>
+          <a class="forgot" href="#">Forgot password?</a>
+          <h5 id="youre" ></h5>
+        </div>
+
+        <div class="col-3">
+        </div>
+        <div class="col-3">
+          <input class="myinp" id="myin3" type="text" name="" placeholder="Username">
+          <input class="myinp" id="myin4" type="text" name="" placeholder="Password">
+          <button class="btn btn-warning pt-1" onclick="register()" type="button">Register</button> <br>
+          <h5 id="taken"></h5>
+        </div>
+      </div>
+    </div>
+        <div class="row">
+        <div class="profile1 unshow" id="profile">
+          <h3 id="loggedin"></h3><br>
+          <button class="logout btn btn-danger" id="logout" onclick="logout()" type="button">LOG OUT</button>
+          <input Class="tasks" id="newtask" type="text">
+          <button class ="btn btn-warning" type="button" onclick="addtask()">ADD TASK</button><br>
+          <input Class="tasks" id="filter" type="text">
+          <button class ="btn btn-warning" type="button" name="button">FILTER</button>
+          <ul class="myul" id="ul">
+
+          </ul>
+          <button class ="btn btn-danger delete" type="button" onclick="removetask()">DELETE ALL TASKS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <body>
+</html>
